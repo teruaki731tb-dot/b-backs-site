@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B-BACKS 選手ページ</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8fafc;
+      color: #0f172a;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #800020;
+      color: white;
+      padding: 20px;
+    }
+
+    .header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo small {
+      display: block;
+      font-size: 12px;
+      color: #f3d6dc;
+      margin-bottom: 6px;
+    }
+
+    .logo h1 {
+      margin: 0;
+      font-size: 30px;
+    }
+
+    nav {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+    }
+
+    .hero {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 24px;
+    }
+
+    .hero p {
+      color: #475569;
+      margin-bottom: 0;
+    }
+
+    .players-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .player-card {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04);
+    }
+
+    .player-photo {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 12px;
+      background: #e2e8f0;
+      display: block;
+      margin-bottom: 14px;
+    }
+
+    .player-name {
+      font-size: 22px;
+      font-weight: bold;
+      margin: 0 0 10px;
+    }
+
+    .player-info {
+      font-size: 14px;
+      color: #475569;
+      margin: 6px 0;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 24px;
+      background: #800020;
+      color: white;
+      text-decoration: none;
+      padding: 12px 18px;
+      border-radius: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: #64748b;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        <small>JABA 京都府野球連盟所属</small>
+        <h1>B-BACKS</h1>
+      </div>
+
+      <nav>
+        <a href="index.html">トップ</a>
+        <a href="players.html">選手紹介</a>
+        <a href="index.html#results">試合結果</a>
+        <a href="index.html#contact">お問い合わせ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>選手紹介</h2>
+      <p>
+        B-BACKSで共に戦う選手たちを紹介します。
+        それぞれの個性、経験、想いを持ちながら、同じ目標に向かって挑戦を続けています。
+      </p>
+    </section>
+
+    <section class="players-grid">
+
+      <div class="player-card">
+        <img src="IMG_1180.jpeg" alt="選手写真" class="player-photo">
+        <h3 class="player-name">選手名</h3>
+        <p class="player-info">背番号：00</p>
+        <p class="player-info">ポジション：投手</p>
+        <p class="player-info">出身：○○</p>
+        <p class="player-info">一言：チームの勝利のために全力で頑張ります。</p>
+      </div>
+
+      <div class="player-card">
+        <img src="IMG_1179.jpeg" alt="選手写真" class="player-photo">
+        <h3 class="player-name">選手名</h3>
+        <p class="player-info">背番号：00</p>
+        <p class="player-info">ポジション：捕手</p>
+        <p class="player-info">出身：○○</p>
+        <p class="player-info">一言：応援されるチームを目指して頑張ります。</p>
+      </div>
+
+      <div class="player-card">
+        <div class="player-photo"></div>
+        <h3 class="player-name">選手名</h3>
+        <p class="player-info">背番号：00</p>
+        <p class="player-info">ポジション：内野手</p>
+        <p class="player-info">出身：○○</p>
+        <p class="player-info">一言：もう一度、本気で野球に挑戦します。</p>
+      </div>
+
+    </section>
+
+    <a href="index.html" class="back-link">トップページへ戻る</a>
+  </main>
+
+  <footer>
+    © 2026 B-BACKS
+  </footer>
+
+</body>
+</html>
