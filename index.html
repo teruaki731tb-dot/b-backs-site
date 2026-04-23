@@ -12,65 +12,176 @@
       color: #0f172a;
       line-height: 1.7;
     }
+
     header {
       background: #0f172a;
       color: white;
-      padding: 24px;
-      text-align: center;
+      padding: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
-    main {
-      max-width: 960px;
+
+    .header-inner {
+      max-width: 1100px;
       margin: 0 auto;
-      padding: 40px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
     }
+
+    .logo small {
+      display: block;
+      font-size: 12px;
+      color: #cbd5e1;
+      margin-bottom: 6px;
+    }
+
+    .logo h1 {
+      margin: 0;
+      font-size: 30px;
+    }
+
+    nav {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .hero {
+      background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+      padding: 70px 20px;
+    }
+
+    .hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .hero p {
+      color: #475569;
+      max-width: 700px;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 30px 20px 60px;
+    }
+
     section {
       background: white;
       border: 1px solid #e2e8f0;
       border-radius: 16px;
       padding: 24px;
       margin-bottom: 20px;
+      box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04);
     }
-    h1, h2, h3 {
+
+    h2, h3 {
       margin-top: 0;
     }
+
     .small {
       color: #64748b;
       font-size: 14px;
     }
+
+    .photo-box {
+      background: #e2e8f0;
+      color: #64748b;
+      border-radius: 14px;
+      padding: 60px 20px;
+      text-align: center;
+      margin-top: 16px;
+    }
+
     .result {
-      padding: 12px 0;
+      padding: 16px 0;
       border-top: 1px solid #e2e8f0;
     }
+
     .result:first-child {
       border-top: none;
       padding-top: 0;
     }
+
+    .button {
+      display: inline-block;
+      background: #0f172a;
+      color: white;
+      text-decoration: none;
+      padding: 12px 18px;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
     footer {
       text-align: center;
       padding: 24px;
       color: #64748b;
       font-size: 14px;
     }
+
+    @media (max-width: 700px) {
+      .logo h1 {
+        font-size: 24px;
+      }
+    }
   </style>
 </head>
 <body>
+
   <header>
-    <div class="small">JABA 京都府野球連盟所属</div>
-    <h1>B-BACKS</h1>
-    <p>本気で勝ちにいく。そして、地域に応援されるチームへ。</p>
+    <div class="header-inner">
+      <div class="logo">
+        <small>JABA 京都府野球連盟所属</small>
+        <h1>B-BACKS</h1>
+      </div>
+
+      <nav>
+        <a href="#about">チーム紹介</a>
+        <a href="#philosophy">理念</a>
+        <a href="#message">監督の想い</a>
+        <a href="#results">試合結果</a>
+        <a href="#recruit">選手募集</a>
+        <a href="#contact">お問い合わせ</a>
+      </nav>
+    </div>
   </header>
 
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="small">挑戦を、続ける。</p>
+      <h2>本気で勝ちにいく。<br>そして、地域に応援されるチームへ。</h2>
+      <p>
+        B-BACKSは、社会人硬式野球クラブとして公式戦での勝利を目指しながら、
+        野球を通じて人と人、人と地域をつなぐ存在でありたいと考えています。
+        競技力だけでなく、姿勢や行動、日々の積み重ねも大切にしています。
+      </p>
+    </div>
+  </section>
+
   <main>
-    <section>
+    <section id="about">
       <h2>B-BACKSについて</h2>
       <p>
         B-BACKSは、勝利を目指して本気で野球に取り組む社会人硬式野球クラブです。
         試合で結果を出すことはもちろん、日々の挨拶や行動、仲間との関わり、
         地域とのつながりもチームの大切な価値だと考えています。
       </p>
+      <div class="photo-box">ここにチーム写真を入れる</div>
     </section>
 
-    <section>
+    <section id="philosophy">
       <h2>理念</h2>
       <p>・硬式野球再挑戦の場としてあり続ける</p>
       <p>・社会人硬式野球の底辺拡大への貢献</p>
@@ -82,7 +193,7 @@
       </p>
     </section>
 
-    <section>
+    <section id="message">
       <h2>監督の想い</h2>
       <p>
         B-BACKSは、年齢や経歴に関係なく「もう一度、本気で硬式野球に挑戦したい」
@@ -99,41 +210,49 @@
       </p>
     </section>
 
-    <section>
+    <section id="results">
       <h2>試合結果</h2>
+
       <div class="result">
         <strong>2026.04.04 練習試合</strong><br>
         vs 京都城陽ファイアーバーズ　○ 14-7<br>
         8回コールド。打線がつながり14得点。四死球からの失点は今後の課題。
       </div>
+
       <div class="result">
         <strong>2026.04.11 都市対抗予選</strong><br>
         vs 島津製作所　● 6-19<br>
-        初回に5得点を挙げ先制するも、その後追加点が奪えず。守備では初回を無失点で切り抜けたが、2回から6回まで毎回失点。防げた失点もあり、課題の残る試合となった。
+        初回に5得点を挙げ先制するも、その後追加点が奪えず。守備では初回を無失点で切り抜けたが、
+        2回から6回まで毎回失点。防げた失点もあり、課題の残る試合となった。
       </div>
+
       <div class="result">
         <strong>2026.04.18 クラブ選手権予選</strong><br>
         vs 京都城陽ファイアーバーズ　試合予定
       </div>
     </section>
 
-    <section>
+    <section id="recruit">
       <h2>選手募集</h2>
       <p>
         B-BACKSでは、共に成長しながら本気で戦う仲間を募集しています。
         社会人になっても野球を続けたい方、もう一度本気で挑戦したい方を歓迎します。
       </p>
+      <a href="#contact" class="button">お問い合わせはこちら</a>
     </section>
 
-    <section>
+    <section id="contact">
       <h2>お問い合わせ</h2>
       <p>練習参加、見学、試合、協賛、地域連携、野球教室などのお問い合わせを受け付けています。</p>
       <p>メール：example@example.com</p>
+      <p>Instagram：ここにURL</p>
+      <p>LINE：ここにURL</p>
     </section>
   </main>
 
   <footer>
     © 2026 B-BACKS
   </footer>
+
 </body>
 </html>
