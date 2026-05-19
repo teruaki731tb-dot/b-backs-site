@@ -4,28 +4,36 @@
   <meta charset="UTF-8">
   <meta name="google-site-verification" content="WmtQMdy_GhJkLej2vlZDhU5sEvjh9PQScbvejXW_pns" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>B-BACKS｜京都の社会人硬式野球クラブ｜選手募集・試合情報</title>
+
+  <title>B-BACKS｜京都の社会人硬式野球クラブ</title>
+  <meta name="description" content="B-BACKSは京都を拠点に活動する社会人硬式野球クラブチームです。選手募集、試合結果、チーム情報を掲載しています。">
+
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: #f8fafc;
       color: #0f172a;
-      line-height: 1.7;
+      line-height: 1.8;
     }
 
     header {
       background: #800020;
       color: white;
-      padding: 20px;
       position: sticky;
       top: 0;
-      z-index: 10;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
 
     .header-inner {
-      max-width: 1100px;
+      max-width: 1200px;
       margin: 0 auto;
+      padding: 14px 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -33,379 +41,442 @@
       flex-wrap: wrap;
     }
 
+    .logo-link {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .logo img {
+      height: 60px;
+    }
+
     .logo small {
       display: block;
+      color: #f3d6dc;
       font-size: 12px;
-      color: #cbd5e1;
-      margin-bottom: 6px;
     }
 
     .logo h1 {
       margin: 0;
-      font-size: 30px;
+      font-size: 24px;
+      letter-spacing: 1px;
     }
 
-    nav {
+    .right-menu {
       display: flex;
-      gap: 16px;
+      align-items: center;
+      gap: 18px;
       flex-wrap: wrap;
     }
 
-    nav a {
+    .menu {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .menu a {
       color: white;
       text-decoration: none;
       font-size: 14px;
+      font-weight: bold;
+      padding-bottom: 4px;
+    }
+
+    .menu a:hover {
+      border-bottom: 2px solid white;
+    }
+
+    .sns {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .sns img {
+      width: 30px;
+      height: 30px;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: 0.2s;
+    }
+
+    .sns img:hover {
+      transform: scale(1.1);
     }
 
     .hero {
-      background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
-      padding: 70px 20px;
+      position: relative;
+      min-height: 520px;
+      background-image: linear-gradient(rgba(15, 23, 42, 0.35), rgba(15, 23, 42, 0.55)), url("IMG_1180.jpeg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      color: white;
     }
 
-    .hero-inner {
+    .hero-content {
       max-width: 1100px;
       margin: 0 auto;
+      padding: 80px 20px;
+      width: 100%;
+    }
+
+    .hero-label {
+      font-size: 32px;
+      font-weight: bold;
+      margin: 0 0 8px;
+    }
+
+    .hero h2 {
+      font-size: 32px;
+      line-height: 1.45;
+      margin: 0 0 24px;
     }
 
     .hero p {
-      color: #475569;
-      max-width: 700px;
+      max-width: 720px;
+      font-size: 17px;
+      margin-bottom: 24px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #800020;
+      color: white;
+      padding: 12px 22px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
     }
 
     main {
       max-width: 1100px;
       margin: 0 auto;
-      padding: 30px 20px 60px;
+      padding: 50px 20px;
     }
 
     section {
+      margin-bottom: 60px;
+    }
+
+    .section-title {
+      margin-bottom: 24px;
+    }
+
+    .section-en {
+      color: #800020;
+      font-weight: bold;
+      letter-spacing: 2px;
+      font-size: 13px;
+      margin-bottom: 6px;
+    }
+
+    .section-title h2 {
+      margin: 0;
+      font-size: 32px;
+      border-left: 6px solid #800020;
+      padding-left: 14px;
+    }
+
+    .card {
       background: white;
       border: 1px solid #e2e8f0;
       border-radius: 16px;
-      padding: 24px;
-      margin-bottom: 20px;
-      box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04);
+      padding: 26px;
+      box-shadow: 0 6px 20px rgba(15, 23, 42, 0.05);
     }
 
-    h2, h3 {
-      margin-top: 0;
+    .two-column {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      align-items: center;
     }
 
-    .small {
-      color: #64748b;
-      font-size: 14px;
+    .photo {
+      width: 100%;
+      border-radius: 16px;
+      display: block;
     }
 
-    .photo-box {
-      background: #e2e8f0;
-      color: #64748b;
-      border-radius: 14px;
-      padding: 60px 20px;
-      text-align: center;
-      margin-top: 16px;
+    .philosophy-list {
+      display: grid;
+      gap: 16px;
+    }
+
+    .philosophy-item {
+      background: white;
+      border-left: 6px solid #800020;
+      border-radius: 12px;
+      padding: 18px;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
     }
 
     .result {
-      padding: 16px 0;
-      border-top: 1px solid #e2e8f0;
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 18px;
+      margin-bottom: 14px;
     }
 
-    .result:first-child {
-      border-top: none;
-      padding-top: 0;
+    .result strong {
+      color: #800020;
     }
 
-    .button {
-      display: inline-block;
-      background: #0f172a;
-      color: white;
+    .links-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .link-card {
+      background: white;
+      border-radius: 16px;
+      padding: 24px;
       text-decoration: none;
-      padding: 12px 18px;
-      border-radius: 10px;
-      margin-top: 10px;
+      color: #0f172a;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04);
+      transition: 0.2s;
+    }
+
+    .link-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .contact-box {
+      background: #800020;
+      color: white;
+      border-radius: 16px;
+      padding: 28px;
+    }
+
+    .top-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #800020;
+      color: white;
+      padding: 12px 16px;
+      border-radius: 50%;
+      text-decoration: none;
+      font-size: 18px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.25);
     }
 
     footer {
       text-align: center;
-      padding: 24px;
+      padding: 30px 20px;
       color: #64748b;
-      font-size: 14px;
+      background: white;
+      border-top: 1px solid #e2e8f0;
     }
 
-    @media (max-width: 700px) {
-      .logo h1 {
-        font-size: 24px;
+    @media (max-width: 800px) {
+      .hero {
+        min-height: 460px;
+      }
+
+      .hero-label,
+      .hero h2 {
+        font-size: 26px;
+      }
+
+      .two-column,
+      .links-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .header-inner {
+        justify-content: center;
+      }
+
+      .right-menu {
+        justify-content: center;
+      }
+
+      .menu {
+        justify-content: center;
+        gap: 12px;
       }
     }
-    a:hover {
-    opacity: 0.8;
- .menu{
-  display:flex;
-  gap:18px;
-  flex-wrap:wrap;
-}
-
-.menu a{
-  color:white;
-  text-decoration:none;
-  font-size:14px;
-  font-weight:600;
-  padding-bottom:4px;
-  transition:0.2s;
-}
-
-.menu a:hover{
-  border-bottom:2px solid white;
-}
-
-.sns{
-  display:flex;
-  gap:10px;
-  align-items:center;
-}
-      </style>
+  </style>
 </head>
+
 <body>
 
   <header>
-  <div class="header-inner" style="
-    max-width:1100px;
-    margin:0 auto;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-  ">
+    <div class="header-inner">
 
-    <!-- 左：ロゴ -->
-    <a href="index.html" style="text-decoration:none; color:inherit;">
-  <div class="logo" style="display:flex; align-items:center; gap:16px;">
+      <a href="index.html" class="logo-link">
+        <div class="logo">
+          <img src="unnamed.png" alt="B-BACKS ロゴ">
+          <div>
+            <small>JABA 京都府野球連盟所属</small>
+            <h1>B-BACKS</h1>
+          </div>
+        </div>
+      </a>
 
-    <img src="unnamed.png" style="height:60px;">
+      <div class="right-menu">
+        <nav class="menu">
+          <a href="index.html">ホーム</a>
+          <a href="team.html">チーム概要</a>
+          <a href="players.html">選手紹介</a>
+          <a href="results.html">試合結果</a>
+          <a href="recruit.html">選手募集</a>
+          <a href="#contact">お問い合わせ</a>
+        </nav>
 
-    <div>
-      <small style="display:block; color:#f3d6dc;">JABA 京都府野球連盟所属</small>
-      <h1 style="margin:0; font-size:24px;">B-BACKS</h1>
+        <div class="sns">
+          <a href="https://www.instagram.com/b_backs_baseball/" target="_blank">
+            <img src="instagram.png" alt="Instagram">
+          </a>
+          <a href="https://lin.ee/ZNXNr1C" target="_blank">
+            <img src="line.png" alt="LINE">
+          </a>
+        </div>
+      </div>
+
     </div>
+  </header>
 
-  </div>
-</a>
-
-    <!-- 右：メニュー＋SNS -->
-    <div style="display:flex; align-items:center; gap:20px;">
-
-      <!-- メニュー -->
-      <nav class="menu">
-  <a href="index.html">ホーム</a>
-  <a href="team.html">チーム概要</a>
-  <a href="players.html">選手紹介</a>
-  <a href="results.html">試合結果</a>
-  <a href="recruit.html">選手募集</a>
-  <a href="#contact">お問い合わせ</a>
-</nav>
-
-<!-- 右：SNS -->
-<div class="sns">
-
-  <!-- Instagram -->
-  <a href="https://www.instagram.com/b_backs_baseball/" target="_blank" aria-label="Instagram">
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
-      <rect x="2" y="2" width="20" height="20" rx="6"/>
-      <circle cx="12" cy="12" r="5" fill="#800020"/>
-      <circle cx="17.5" cy="6.5" r="1.5" fill="#800020"/>
-    </svg>
-  </a>
-
-  <!-- LINE -->
-  <a href="https://lin.ee/ZNXNr1C" target="_blank" aria-label="LINE">
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
-      <rect x="2" y="3" width="20" height="16" rx="6"/>
-      <circle cx="9" cy="10" r="1.2" fill="#800020"/>
-      <circle cx="12" cy="10" r="1.2" fill="#800020"/>
-      <circle cx="15" cy="10" r="1.2" fill="#800020"/>
-    </svg>
-  </a>
-
-</div>
+  <section class="hero">
+    <div class="hero-content">
+      <p class="hero-label">挑戦を、続ける。</p>
+      <h2>
+        本気で勝ちにいく。<br>
+        そして、地域に応援されるチームへ。
+      </h2>
+      <p>
+        B-BACKSは、社会人硬式野球クラブとして公式戦での勝利を目指しながら、<br>
+        野球を通じて人と人、人と地域をつなぐ存在でありたいと考えています。
+      </p>
+      <a href="#contact" class="button">お問い合わせはこちら</a>
     </div>
-
-  </div>
-</header>
-
-  <section class="hero" style="
-  padding:80px 20px;
-  text-align:center;
-  background:linear-gradient(180deg,#ffffff,#f8fafc);
-">
-
-  <p style="
-    font-size:32px;
-    font-weight:700;
-    color:#800020;
-    margin:0;
-  ">
-    挑戦を、続ける。
-  </p>
-
-  <h2 style="
-    font-size:32px;
-    margin:10px 0 20px;
-  ">
-    本気で勝ちにいく。<br>
-    そして、地域に応援されるチームへ。
-  </h2>
-
-  <p style="
-    max-width:700px;
-    margin:0 auto;
-    color:#475569;
-  ">
-   B-BACKSは、社会人硬式野球クラブとして公式戦での勝利を目指しながら、<br>
-野球を通じて人と人、人と地域をつなぐ存在でありたいと考えています。
-
-  <a href="#contact" style="
-    display:inline-block;
-    margin-top:20px;
-    background:#800020;
-    color:white;
-    padding:12px 24px;
-    border-radius:10px;
-    text-decoration:none;
-  ">
-    お問い合わせはこちら
-  </a>
-
-</section>
+  </section>
 
   <main>
+
     <section id="about">
-      <h2>B-BACKSについて</h2>
-      <p>
-        B-BACKSは、勝利を目指して本気で野球に取り組む社会人硬式野球クラブです。
-        試合で結果を出すことはもちろん、日々の挨拶や行動、仲間との関わり、
-        地域とのつながりもチームの大切な価値だと考えています。
-      </p>
-      <img src="IMG_1180.jpeg" alt="B-BACKS チーム写真" style="width:100%; border-radius:14px; display:block; margin-top:16px;">
+      <div class="section-title">
+        <p class="section-en">ABOUT US</p>
+        <h2>B-BACKSについて</h2>
+      </div>
+
+      <div class="two-column">
+        <div class="card">
+          <p>
+            B-BACKSは、勝利を目指して本気で野球に取り組む社会人硬式野球クラブです。
+            試合で結果を出すことはもちろん、日々の挨拶や行動、仲間との関わり、
+            地域とのつながりもチームの大切な価値だと考えています。
+          </p>
+          <a href="team.html" class="button">チーム概要を見る</a>
+        </div>
+
+        <img src="IMG_1179.jpeg" alt="B-BACKS 試合風景" class="photo">
+      </div>
     </section>
 
     <section id="philosophy">
-      <h2>理念</h2>
-      <p>・硬式野球再挑戦の場としてあり続ける</p>
-      <p>・社会人硬式野球の底辺拡大への貢献</p>
-      <p>・たくさんの人から愛され、応援していただけるクラブチームであること</p>
-      <p>
-        B-BACKSは、年齢・経歴を問わず「硬式野球を本気で楽しみたい」
-        「野球の技術向上はもちろん社会人としても成長したい」人が集まる場所として活動します。
-        野球を通して人と人を結び、社会人としての責任と誇りを持ったチームを目指します。
-      </p>
+      <div class="section-title">
+        <p class="section-en">PHILOSOPHY</p>
+        <h2>チーム理念</h2>
+      </div>
+
+      <div class="philosophy-list">
+        <div class="philosophy-item">硬式野球再挑戦の場としてあり続ける</div>
+        <div class="philosophy-item">社会人硬式野球の底辺拡大への貢献</div>
+        <div class="philosophy-item">たくさんの人から愛され、応援していただけるクラブチームであること</div>
+      </div>
     </section>
 
     <section id="message">
-      <h2>監督の想い</h2>
-      <p>
-        B-BACKSは、年齢や経歴に関係なく「もう一度、本気で硬式野球に挑戦したい」
-        「本気で野球を楽しみたい」と思う人が集まる場所です。
-      </p>
-      <p>
-        野球の技術向上はもちろんですが、それ以上に大切にしているのは、人としての成長です。
-        社会人としての責任や立ち振る舞い、仲間との関わり方、そのすべてが野球につながっていると考えています。
-      </p>
-      <p>
-        野球を通して人と人を結び、応援されるチームになる。
-        そして、この場所が「もう一度挑戦できる場所」であり続けること。
-        それが、B-BACKSの存在意義だと考えています。
-      </p>
-    </section>
-　<section>
- 　 <h2>試合風景</h2>
- 　 <img src="IMG_1179.jpeg" alt="B-BACKS 試合写真" style="width:100%; border-radius:14px; display:block;">
-　</section>
-    <section id="results">
-      <h2>試合結果</h2>
+      <div class="section-title">
+        <p class="section-en">MESSAGE</p>
+        <h2>監督の想い</h2>
+      </div>
 
-      <div class="result">
-  <strong>2026.04.18 クラブ選手権大会 京都府一次予選</strong><br>
-  vs 京都城陽ファイアーバーズ　● 4-6<br>
-  初回に4失点。その後、粘りは見せたがあと一歩及ばず。
-</div>
-
-<div class="result">
-  <strong>2026.04.11 都市対抗予選　準決勝</strong><br>
-  vs 島津製作所　● 6-19<br>
-  初回に5得点を挙げ先制するも、その後追加点が奪えず。
-</div>
-
-<div class="result">
-  <strong>2026.04.04 都市対抗予選　一回戦</strong><br>
-  vs 京都城陽ファイアーバーズ　○ 14-7<br>
-  8回コールド。打線がつながり14得点。
-</div>
-
- <div class="result">
-  <strong>2026.03.15 京都府春季大会　一回戦</strong><br>
-  vs ニチダイ　● 1-8<br>
-  7回コールド。企業チーム相手に粘りを見せるが7回で力尽きる。
-</div>
-
-  <div class="result">
-  <strong>2026.03.08 OP戦</strong><br>
-  vs 岐阜硬式野球倶楽部　○ <br>
-  打撃陣好調で二桁得点で勝利。
-</div>    
+      <div class="card">
+        <p>
+          B-BACKSは、年齢や経歴に関係なく「もう一度、本気で硬式野球に挑戦したい」
+          「本気で野球を楽しみたい」と思う人が集まる場所です。
+        </p>
+        <p>
+          野球の技術向上はもちろんですが、それ以上に大切にしているのは、人としての成長です。
+          社会人としての責任や立ち振る舞い、仲間との関わり方、そのすべてが野球につながっていると考えています。
+        </p>
+        <p>
+          野球を通して人と人を結び、応援されるチームになる。
+          そして、この場所が「もう一度挑戦できる場所」であり続けること。
+          それが、B-BACKSの存在意義だと考えています。
+        </p>
+      </div>
     </section>
 
-    <section id="recruit">
-      <h2>選手募集</h2>
-      <p>
-        B-BACKSでは、共に成長しながら本気で戦う仲間を募集しています。
-        社会人になっても野球を続けたい方、もう一度本気で挑戦したい方を歓迎します。
-      </p>
+    <section>
+      <div class="section-title">
+        <p class="section-en">CONTENTS</p>
+        <h2>コンテンツ</h2>
+      </div>
+
+      <div class="links-grid">
+        <a href="players.html" class="link-card">
+          <h3>選手紹介</h3>
+          <p>共に戦う選手たちを紹介します。</p>
+        </a>
+
+        <a href="results.html" class="link-card">
+          <h3>試合結果</h3>
+          <p>公式戦・オープン戦の結果を掲載します。</p>
+        </a>
+
+        <a href="recruit.html" class="link-card">
+          <h3>選手募集</h3>
+          <p>硬式野球に再挑戦したい仲間を募集しています。</p>
+        </a>
+      </div>
     </section>
 
     <section id="contact">
-      <h2>お問い合わせ</h2>
-      <p>練習参加、見学、試合、協賛、地域連携、野球教室などのお問い合わせを受け付けています。</p>
-      <p>メール：89bbacks@gmail.com</p>
-      <div style="display:flex; gap:16px; margin-top:12px; align-items:center;">
+      <div class="section-title">
+        <p class="section-en">CONTACT</p>
+        <h2>お問い合わせ</h2>
+      </div>
 
-  <!-- Instagram -->
-  <a href="https://www.instagram.com/b_backs_baseball/" target="_blank" style="display:flex; align-items:center; text-decoration:none; color:#0f172a;">
-    <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
-      <rect x="2" y="2" width="20" height="20" rx="6" stroke="#0f172a" stroke-width="2"/>
-      <circle cx="12" cy="12" r="5" stroke="#0f172a" stroke-width="2"/>
-      <circle cx="17.5" cy="6.5" r="1.5" fill="#0f172a"/>
-    </svg>
-    <span style="margin-left:6px;">Instagram</span>
-  </a>
+      <div class="contact-box">
+        <p>
+          練習参加、見学、試合、協賛、地域連携、野球教室などのお問い合わせを受け付けています。
+        </p>
+        <p>Instagram・LINEからお気軽にご連絡ください。</p>
 
-  <!-- LINE -->
-  <a href="https://lin.ee/ZNXNr1C" target="_blank" style="display:flex; align-items:center; text-decoration:none; color:#0f172a;">
-    <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
-      <rect x="2" y="3" width="20" height="16" rx="6" stroke="#0f172a" stroke-width="2"/>
-      <path d="M8 10h1M12 10h1M16 10h1" stroke="#0f172a" stroke-width="2"/>
-      <path d="M10 19l2-2h4" stroke="#0f172a" stroke-width="2"/>
-    </svg>
-    <span style="margin-left:6px;">LINE</span>
-  </a>
-
-</div>
+        <div class="sns">
+          <a href="https://www.instagram.com/b_backs_baseball/" target="_blank">
+            <img src="instagram.png" alt="Instagram">
+          </a>
+          <a href="https://lin.ee/ZNXNr1C" target="_blank">
+            <img src="line.png" alt="LINE">
+          </a>
+        </div>
+      </div>
     </section>
+
   </main>
 
-  <a href="#" style="
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:#800020;
-  color:white;
-  padding:12px 16px;
-  border-radius:50%;
-  text-decoration:none;
-  font-size:18px;
-">
-↑
-</a>
+  <a href="#" class="top-button">↑</a>
+
   <footer>
-    © 2026 B-BACKS
+    <p>© 2026 B-BACKS</p>
+    <p>JABA 京都府野球連盟所属</p>
   </footer>
 
 </body>
