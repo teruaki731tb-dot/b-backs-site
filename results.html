@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>試合結果｜B-BACKS</title>
+  <meta name="description" content="B-BACKSの公式戦・オープン戦の試合結果を掲載しています。">
+
+  <style>
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8fafc;
+      color: #0f172a;
+      line-height: 1.8;
+    }
+
+    header {
+      background: #800020;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo-link {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .logo img {
+      height: 60px;
+    }
+
+    .logo small {
+      display: block;
+      color: #f3d6dc;
+      font-size: 12px;
+    }
+
+    .logo h1 {
+      margin: 0;
+      font-size: 24px;
+      letter-spacing: 1px;
+    }
+
+    .right-menu {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .menu {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+      padding-bottom: 4px;
+    }
+
+    .menu a:hover {
+      border-bottom: 2px solid white;
+    }
+
+    .sns {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .sns img {
+      width: 30px;
+      height: 30px;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: 0.2s;
+    }
+
+    .sns img:hover {
+      transform: scale(1.1);
+    }
+
+    .page-hero {
+      background: linear-gradient(rgba(15,23,42,0.45), rgba(15,23,42,0.65)), url("IMG_1179.jpeg");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 90px 20px;
+    }
+
+    .page-hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .page-hero p {
+      font-weight: bold;
+      letter-spacing: 2px;
+      margin: 0 0 8px;
+    }
+
+    .page-hero h2 {
+      font-size: 40px;
+      margin: 0;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 50px 20px;
+    }
+
+    .section-title {
+      margin-bottom: 24px;
+    }
+
+    .section-en {
+      color: #800020;
+      font-weight: bold;
+      letter-spacing: 2px;
+      font-size: 13px;
+      margin-bottom: 6px;
+    }
+
+    .section-title h2 {
+      margin: 0;
+      font-size: 32px;
+      border-left: 6px solid #800020;
+      padding-left: 14px;
+    }
+
+    .result-card {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 18px;
+      box-shadow: 0 6px 20px rgba(15, 23, 42, 0.05);
+    }
+
+    .result-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 14px;
+      margin-bottom: 14px;
+    }
+
+    .date {
+      color: #64748b;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .match-title {
+      font-size: 22px;
+      font-weight: bold;
+      margin: 4px 0 0;
+    }
+
+    .score {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .win {
+      color: #16a34a;
+    }
+
+    .lose {
+      color: #dc2626;
+    }
+
+    .planned {
+      color: #64748b;
+    }
+
+    .summary {
+      color: #475569;
+      margin-bottom: 0;
+    }
+
+    .button-area {
+      margin-top: 30px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-block;
+      background: #800020;
+      color: white;
+      padding: 12px 22px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .top-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #800020;
+      color: white;
+      padding: 12px 16px;
+      border-radius: 50%;
+      text-decoration: none;
+      font-size: 18px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: #64748b;
+      background: white;
+      border-top: 1px solid #e2e8f0;
+    }
+
+    @media (max-width: 800px) {
+      .header-inner {
+        justify-content: center;
+      }
+
+      .right-menu {
+        justify-content: center;
+      }
+
+      .menu {
+        justify-content: center;
+        gap: 12px;
+      }
+
+      .page-hero h2 {
+        font-size: 30px;
+      }
+
+      .score {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="header-inner">
+
+      <a href="index.html" class="logo-link">
+        <div class="logo">
+          <img src="unnamed.png" alt="B-BACKS ロゴ">
+          <div>
+            <small>JABA 京都府野球連盟所属</small>
+            <h1>B-BACKS</h1>
+          </div>
+        </div>
+      </a>
+
+      <div class="right-menu">
+        <nav class="menu">
+          <a href="index.html">ホーム</a>
+          <a href="team.html">チーム概要</a>
+          <a href="players.html">選手紹介</a>
+          <a href="results.html">試合結果</a>
+          <a href="recruit.html">選手募集</a>
+          <a href="index.html#contact">お問い合わせ</a>
+        </nav>
+
+        <div class="sns">
+          <a href="https://www.instagram.com/b_backs_baseball/" target="_blank">
+            <img src="instagram.png" alt="Instagram">
+          </a>
+          <a href="https://lin.ee/ZNXNr1C" target="_blank">
+            <img src="line.png" alt="LINE">
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <p>GAME RESULTS</p>
+      <h2>試合結果</h2>
+    </div>
+  </section>
+
+  <main>
+
+    <section>
+      <div class="section-title">
+        <p class="section-en">2026 SEASON</p>
+        <h2>2026年 試合結果</h2>
+      </div>
+
+      <div class="result-card">
+        <div class="result-top">
+          <div>
+            <div class="date">2026.04.18｜クラブ選手権大会 京都府一次予選</div>
+            <div class="match-title">vs 京都城陽ファイアーバーズ</div>
+          </div>
+          <div class="score lose">● 4-6</div>
+        </div>
+        <p class="summary">
+          初回に1点を先制するも、その裏に4失点。一気に逆転を許す展開となった。
+          その後も追加点を与え、7回に3点を返して追い上げたが、あと一歩届かず敗戦。
+        </p>
+      </div>
+
+      <div class="result-card">
+        <div class="result-top">
+          <div>
+            <div class="date">2026.04.11｜都市対抗予選</div>
+            <div class="match-title">vs 島津製作所</div>
+          </div>
+          <div class="score lose">● 6-19</div>
+        </div>
+        <p class="summary">
+          初回に5得点を挙げ先制するも、その後追加点が奪えず。
+          守備では初回を無失点で切り抜けたが、2回から6回まで毎回失点。
+          防げた失点もあり、課題の残る試合となった。
+        </p>
+      </div>
+
+      <div class="result-card">
+        <div class="result-top">
+          <div>
+            <div class="date">2026.04.04｜練習試合</div>
+            <div class="match-title">vs 京都城陽ファイアーバーズ</div>
+          </div>
+          <div class="score win">○ 14-7</div>
+        </div>
+        <p class="summary">
+          8回コールド。打線がつながり14得点を挙げて勝利。
+          四死球からの失点は今後の課題。
+        </p>
+      </div>
+
+      <div class="button-area">
+        <a href="index.html" class="button">トップページへ戻る</a>
+        <a href="players.html" class="button">選手紹介を見る</a>
+      </div>
+    </section>
+
+  </main>
+
+  <a href="#" class="top-button">↑</a>
+
+  <footer>
+    <p>© 2026 B-BACKS</p>
+    <p>JABA 京都府野球連盟所属</p>
+  </footer>
+
+</body>
+</html>
