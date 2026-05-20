@@ -1,18 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
     <loc>https://b-backs-site.vercel.app/</loc>
   </url>
+
   <url>
-    <loc>https://b-backs-site/team.html</loc>
+    <loc>https://b-backs-site.vercel.app/team.html</loc>
   </url>
+
   <url>
-    <loc>https://b-backs-site/players.html</loc>
+    <loc>https://b-backs-site.vercel.app/players.html</loc>
   </url>
+
   <url>
-    <loc>https://b-backs-site/results.html</loc>
+    <loc>https://b-backs-site.vercel.app/results.html</loc>
   </url>
+
   <url>
-    <loc>https://b-backs-site/recruit.html</loc>
+    <loc>https://b-backs-site.vercel.app/recruit.html</loc>
   </url>
+
 </urlset>
