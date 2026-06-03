@@ -284,6 +284,34 @@
         width: 120px;
       }
     }
+    .menu-toggle{
+  display:none;
+  background:#800020;
+  color:white;
+  border:none;
+  font-size:28px;
+  cursor:pointer;
+}
+
+@media (max-width: 800px){
+
+  .menu-toggle{
+    display:block;
+  }
+
+  .menu{
+    display:none;
+    width:100%;
+    flex-direction:column;
+    gap:10px;
+    margin-top:10px;
+  }
+
+  .menu.active{
+    display:flex;
+  }
+
+}
   </style>
 </head>
 
