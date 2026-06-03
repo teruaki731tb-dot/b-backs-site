@@ -50,17 +50,6 @@
       font-size: 24px;
     }
 
-    nav {
-      display: flex;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-size: 14px;
-    }
 
     main {
       max-width: 1000px;
@@ -116,6 +105,77 @@
       color: #64748b;
       font-size: 14px;
     }
+    .logo-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.right-menu {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.menu {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  padding-bottom: 4px;
+}
+
+.menu a:hover {
+  border-bottom: 2px solid white;
+}
+
+.sns {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.sns img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (max-width: 800px) {
+  .header-inner {
+    justify-content: center;
+  }
+
+  .right-menu {
+    justify-content: center;
+  }
+
+  .menu {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .contact-menu {
+    display: none;
+  }
+
+  .sns img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .menu a {
+    font-size: 13px;
+  }
+}
   </style>
 </head>
 <body>
@@ -213,6 +273,6 @@
   <footer>
     © 2026 B-BACKS
   </footer>
-
+</html>
 </body>
 </html>
