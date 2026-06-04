@@ -300,47 +300,166 @@
   }
 
 }
+    header {
+background: #800020;
+color: white;
+position: sticky;
+top: 0;
+z-index: 100;
+box-shadow: 0 4px 14px rgba(0,0,0,0.22);
+}
+
+.header-inner {
+max-width: 1220px;
+margin: 0 auto;
+padding: 14px 22px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 18px;
+flex-wrap: wrap;
+}
+
+.logo-link {
+color: inherit;
+text-decoration: none;
+}
+
+.logo {
+display: flex;
+align-items: center;
+gap: 14px;
+}
+
+.logo img {
+height: 58px;
+}
+
+.logo small {
+display: block;
+color: #f3d6dc;
+font-size: 12px;
+}
+
+.logo h1 {
+margin: 0;
+font-size: 24px;
+letter-spacing: 1px;
+}
+
+.right-menu {
+display: flex;
+align-items: center;
+gap: 18px;
+flex-wrap: wrap;
+}
+
+.menu {
+display: flex;
+gap: 18px;
+flex-wrap: wrap;
+align-items: center;
+}
+
+.menu a {
+color: white;
+text-decoration: none;
+font-size: 14px;
+font-weight: bold;
+padding-bottom: 4px;
+}
+
+.menu a:hover {
+border-bottom: 2px solid white;
+}
+
+.sns {
+display: flex;
+gap: 10px;
+align-items: center;
+}
+
+.sns img {
+width: 30px;
+height: 30px;
+object-fit: cover;
+border-radius: 8px;
+}
+
+@media (max-width: 900px) {
+
+.header-inner {
+justify-content: center;
+}
+
+.right-menu {
+justify-content: center;
+}
+
+.menu {
+justify-content: center;
+gap: 12px;
+}
+
+.contact-menu {
+display: none;
+}
+
+.menu a {
+font-size: 13px;
+}
+
+.sns img {
+width: 24px;
+height: 24px;
+}
+}
+
   </style>
 </head>
 
 <body>
 
   <header>
-    <div class="header-inner">
+  <div class="header-inner">
 
-      <a href="index.html" class="logo-link">
-        <div class="logo">
-          <img src="unnamed.png" alt="B-BACKS ロゴ">
-          <div>
-            <small>JABA 京都府野球連盟所属</small>
-            <h1>B-BACKS</h1>
-          </div>
-        </div>
-      </a>
+<a href="index.html" class="logo-link">
+  <div class="logo">
+    <img src="unnamed.png" alt="B-BACKS ロゴ">
 
-      <div class="right-menu">
-        <button class="menu-toggle">☰</button>
-        <nav class="menu">
-          <a href="index.html">ホーム</a>
-          <a href="team.html">チーム概要</a>
-          <a href="players.html">選手紹介</a>
-          <a href="results.html">試合結果</a>
-          <a href="recruit.html">選手募集</a>
-          <a href="index.html#contact">お問い合わせ</a>
-        </nav>
-
-        <div class="sns">
-          <a href="https://www.instagram.com/b_backs_baseball/" target="_blank">
-            <img src="instagram_logo.png" alt="Instagram">
-          </a>
-          <a href="https://lin.ee/ZNXNr1C" target="_blank">
-            <img src="LINE_Brand_icon.png" alt="LINE">
-          </a>
-        </div>
-      </div>
-
+    <div>
+      <small>JABA 京都府野球連盟所属</small>
+      <h1>B-BACKS</h1>
     </div>
-  </header>
+  </div>
+</a>
+
+<div class="right-menu">
+
+  <nav class="menu">
+    <a href="index.html">ホーム</a>
+    <a href="team.html">チーム概要</a>
+    <a href="players.html">選手紹介</a>
+    <a href="results.html">試合結果</a>
+    <a href="recruit.html">選手募集</a>
+    <a href="index.html#contact" class="contact-menu">お問い合わせ</a>
+  </nav>
+
+  <div class="sns">
+    <a href="https://www.instagram.com/b_backs_baseball/" target="_blank">
+      <img src="instagram_logo.png" alt="Instagram">
+    </a>
+
+    <a href="https://lin.ee/ZNXNr1C" target="_blank">
+      <img src="LINE_Brand_icon.png" alt="LINE">
+    </a>
+  </div>
+
+</div>
+
+  </div>
+</header>
+
 
   <section class="page-hero">
     <div class="page-hero-inner">
