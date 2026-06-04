@@ -275,10 +275,17 @@
     }
 
     .philosophy-card h3 {
-      font-size: 22px;
-      line-height: 1.45;
-      margin: 0 0 12px;
-    }
+  font-size: 18px;
+  line-height: 1.35;
+  margin: 0 0 12px;
+  white-space: nowrap;
+}
+    @media (max-width: 900px) {
+  .philosophy-card h3 {
+    white-space: normal;
+    font-size: 20px;
+  }
+}
 
     .message-box {
       background: #0f172a;
