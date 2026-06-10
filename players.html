@@ -418,7 +418,121 @@ font-size: 13px;
 width: 24px;
 height: 24px;
 }
+header {
+background: #800020;
+color: white;
+position: sticky;
+top: 0;
+z-index: 100;
+box-shadow: 0 4px 14px rgba(0,0,0,0.22);
 }
+
+.header-inner {
+max-width: 1220px;
+margin: 0 auto;
+padding: 14px 22px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 18px;
+flex-wrap: wrap;
+}
+
+.logo-link {
+color: inherit;
+text-decoration: none;
+}
+
+.logo {
+display: flex;
+align-items: center;
+gap: 14px;
+}
+
+.logo img {
+height: 58px;
+}
+
+.logo small {
+display: block;
+color: #f3d6dc;
+font-size: 12px;
+}
+
+.logo h1 {
+margin: 0;
+font-size: 24px;
+letter-spacing: 1px;
+}
+
+.right-menu {
+display: flex;
+align-items: center;
+gap: 18px;
+flex-wrap: wrap;
+}
+
+.menu {
+display: flex;
+gap: 18px;
+flex-wrap: wrap;
+align-items: center;
+}
+
+.menu a {
+color: white;
+text-decoration: none;
+font-size: 14px;
+font-weight: bold;
+padding-bottom: 4px;
+}
+
+.menu a:hover {
+border-bottom: 2px solid white;
+}
+
+.sns {
+display: flex;
+gap: 10px;
+align-items: center;
+}
+
+.sns img {
+width: 30px;
+height: 30px;
+object-fit: cover;
+border-radius: 8px;
+}
+
+@media (max-width: 900px) {
+
+.header-inner {
+justify-content: center;
+}
+
+.right-menu {
+justify-content: center;
+}
+
+.menu {
+justify-content: center;
+gap: 12px;
+}
+
+.contact-menu {
+display: none;
+}
+
+.menu a {
+font-size: 13px;
+}
+
+.sns img {
+width: 24px;
+height: 24px;
+}
+}
+
 
   </style>
 </head>
