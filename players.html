@@ -532,7 +532,66 @@ width: 24px;
 height: 24px;
 }
 }
+footer {
+  background: white;
+  border-top: 1px solid #e2e8f0;
+  color: #64748b;
+  padding: 34px 22px;
+}
 
+.footer-inner {
+  max-width: 1220px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer-logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #800020;
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #64748b;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: #800020;
+}
+
+.copyright {
+  max-width: 1220px;
+  margin: 20px auto 0;
+  font-size: 13px;
+}
+
+@media (max-width: 900px) {
+  .footer-inner {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-links {
+    justify-content: center;
+  }
+
+  .copyright {
+    text-align: center;
+  }
+}
 
   </style>
 </head>
@@ -900,8 +959,22 @@ height: 24px;
 <a href="#" class="top-button">↑</a>
 
 <footer>
-  <p>© 2026 B-BACKS</p>
-  <p>JABA 京都府野球連盟所属</p>
+  <div class="footer-inner">
+    <div>
+      <p class="footer-logo">B-BACKS</p>
+      <p>JABA 京都府野球連盟所属</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="index.html">ホーム</a>
+      <a href="team.html">チーム概要</a>
+      <a href="players.html">選手紹介</a>
+      <a href="results.html">試合結果</a>
+      <a href="recruit.html">選手募集</a>
+    </div>
+  </div>
+
+  <p class="copyright">© 2026 B-BACKS</p>
 </footer>
 <script>
 document.querySelector(".menu-toggle").addEventListener("click", function() {
