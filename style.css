@@ -360,6 +360,13 @@ section {
 }
 
 /* ===== TEAM PAGE ===== */
+.team-page section {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 26px;
+  padding: 34px;
+  box-shadow: 0 12px 34px rgba(15, 23, 42, 0.06);
+}
 table {
   width: 100%;
   border-collapse: collapse;
