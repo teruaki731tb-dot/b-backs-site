@@ -659,6 +659,9 @@ footer {
   .header-inner {
     justify-content: center;
   }
+  .info-table th {
+  width: 120px;
+}
 
   .right-menu {
     justify-content: center;
