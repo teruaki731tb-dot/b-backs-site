@@ -387,6 +387,20 @@ th {
 }
 
 /* ===== PLAYERS PAGE ===== */
+.players-page main {
+  max-width: 1220px;
+}
+
+.players-page section {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+.players-page .section-title {
+  margin-bottom: 40px;
+}
 .players-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
