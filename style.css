@@ -748,3 +748,16 @@ footer {
 .page-hero h2 {
   color: white;
 }
+.results-page .page-hero {
+  background: #800020 !important;
+  color: white !important;
+  padding: 90px 20px;
+}
+
+.results-page .page-hero p {
+  color: #f3d6dc !important;
+}
+
+.results-page .page-hero h2 {
+  color: white !important;
+}
