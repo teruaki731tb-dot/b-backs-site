@@ -736,3 +736,13 @@ footer {
 
 }  /* ← ここで @media を閉じる */
 
+.page-hero {
+  background: #800020;
+  color: white;
+  padding: 90px 20px;
+}
+
+.page-hero p,
+.page-hero h2 {
+  color: white;
+}
