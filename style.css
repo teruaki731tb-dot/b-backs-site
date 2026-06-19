@@ -495,9 +495,11 @@ th {
 
 .number {
   color: #800020;
-  font-weight: bold;
-  font-size: 14px;
-  letter-spacing: 1px;
+  font-weight: 900;
+  font-size: 40px;
+  border-bottom: 2px solid #800020;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .player-name {
