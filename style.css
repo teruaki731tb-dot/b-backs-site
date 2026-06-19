@@ -405,8 +405,67 @@ th {
 }
 .players-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 24px;
+}
+
+/* タブレット */
+@media (max-width: 1100px) {
+  .players-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* スマホ */
+@media (max-width: 768px) {
+  .players-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .player-photo {
+    height: 220px;
+  }
+
+  .player-name {
+    font-size: 20px;
+  }
+
+  .player-content {
+    padding: 14px;
+  }
+
+  .player-info {
+    font-size: 13px;
+  }
+
+  .message {
+    font-size: 13px;
+  }
+}
+
+/* 小さいスマホ */
+@media (max-width: 480px) {
+  .players-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .player-photo {
+    height: 180px;
+  }
+
+  .player-name {
+    font-size: 18px;
+  }
+
+  .player-info {
+    font-size: 12px;
+  }
+
+  .message {
+    display: none;
+  }
 }
 
 .player-card {
