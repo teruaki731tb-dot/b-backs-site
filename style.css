@@ -862,4 +862,24 @@ footer {
     padding: 0;
     color: #0f172a;
   }
+  @media (max-width: 768px) {
+  .player-info {
+    font-size: 12px;
+    line-height: 1.5;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+
+  .player-content {
+    padding: 12px;
+  }
+
+  .player-name {
+    font-size: 18px;
+  }
+
+  .number {
+    font-size: 30px;
+  }
+}
 }
