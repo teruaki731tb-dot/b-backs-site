@@ -774,3 +774,31 @@ footer {
 .players-page .page-hero h2 {
   color: white !important;
 }
+@media (max-width: 600px) {
+  .team-page table,
+  .team-page tbody,
+  .team-page tr,
+  .team-page th,
+  .team-page td {
+    display: block;
+    width: 100%;
+  }
+
+  .team-page tr {
+    padding: 14px 0;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  .team-page th {
+    border-bottom: none;
+    padding: 0 0 4px;
+    color: #800020;
+    font-size: 14px;
+  }
+
+  .team-page td {
+    border-bottom: none;
+    padding: 0;
+    color: #0f172a;
+  }
+}
