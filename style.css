@@ -927,4 +927,14 @@ footer {
     font-size: 30px;
   }
 }
+  .history-item {
+  border-left: 4px solid #800020;
+  padding-left: 20px;
+  margin-bottom: 24px;
+}
+
+.history-item strong {
+  color: #800020;
+  font-size: 18px;
+}
 }
