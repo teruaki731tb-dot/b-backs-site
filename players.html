@@ -3,406 +3,637 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>選手紹介｜B-BACKS</title>
+  <title>選手・スタッフ紹介｜B-BACKS</title>
+  <meta name="description" content="B-BACKSの選手・スタッフを紹介します。">
   <link rel="icon" type="image/png" href="unnamed.png">
   <link rel="stylesheet" href="style.css">
-  <meta name="description" content="B-BACKSの選手紹介ページです。">
-
-  
+  <style>
+    .photo-placeholder {
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+      color: #94a3b8;
+      font-weight: 800;
+      letter-spacing: 0.18em;
+    }
+    .player-kana {
+      margin: -8px 0 12px;
+      color: #64748b;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+    }
+    .player-badge {
+      display: inline-block;
+      margin: 8px 0 0;
+      padding: 3px 9px;
+      border-radius: 999px;
+      background: #800020;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .position-heading {
+      margin-bottom: 24px;
+    }
+    .position-heading h2 {
+      margin: 0;
+      font-size: 32px;
+      border-left: 6px solid #800020;
+      padding-left: 14px;
+    }
+    .roster-group {
+      margin-bottom: 72px;
+    }
+  </style>
 </head>
 
 <body class="players-page">
-  
 
 <header>
   <div class="header-inner">
+    <a href="index.html" class="logo-link">
+      <div class="logo">
+        <img src="unnamed.png" alt="B-BACKS ロゴ">
+        <div>
+          <small>JABA 京都府野球連盟所属</small>
+          <h1>B-BACKS</h1>
+        </div>
+      </div>
+    </a>
 
-<a href="index.html" class="logo-link">
-  <div class="logo">
-    <img src="unnamed.png" alt="B-BACKS ロゴ">
+    <div class="right-menu">
+      <nav class="menu">
+        <a href="index.html">ホーム</a>
+        <a href="team.html">チーム概要</a>
+        <a href="players.html">選手紹介</a>
+        <a href="results.html">試合結果</a>
+        <a href="recruit.html">選手募集</a>
+        <a href="index.html#contact" class="contact-menu">お問い合わせ</a>
+      </nav>
 
-    <div>
-      <small>JABA 京都府野球連盟所属</small>
-      <h1>B-BACKS</h1>
+      <div class="sns">
+        <a href="https://www.instagram.com/b_backs_baseball/" target="_blank" rel="noopener">
+          <img src="instagram_logo.png" alt="Instagram">
+        </a>
+        <a href="https://lin.ee/ZNXNr1C" target="_blank" rel="noopener">
+          <img src="LINE_Brand_icon.png" alt="LINE">
+        </a>
+      </div>
     </div>
-  </div>
-</a>
-
-<div class="right-menu">
-
-  <nav class="menu">
-    <a href="index.html">ホーム</a>
-    <a href="team.html">チーム概要</a>
-    <a href="players.html">選手紹介</a>
-    <a href="results.html">試合結果</a>
-    <a href="recruit.html">選手募集</a>
-    <a href="index.html#contact" class="contact-menu">お問い合わせ</a>
-  </nav>
-
-  <div class="sns">
-    <a href="https://www.instagram.com/b_backs_baseball/" target="_blank">
-      <img src="instagram_logo.png" alt="Instagram">
-    </a>
-
-    <a href="https://lin.ee/ZNXNr1C" target="_blank">
-      <img src="LINE_Brand_icon.png" alt="LINE">
-    </a>
-  </div>
-
-</div>
-
   </div>
 </header>
 
-  
 <section class="page-hero">
   <div class="page-hero-inner">
-    <p>PLAYERS</p>
+    <p>PLAYERS &amp; STAFF</p>
     <h2>選手・スタッフ紹介</h2>
   </div>
 </section>
 
 <main>
-
-  <section>
+  <section class="roster-group">
     <div class="section-title">
       <p class="section-en">STAFF</p>
       <h2>スタッフ紹介</h2>
     </div>
-
     <div class="players-grid">
 
-      <!-- 監督 -->
-      <div class="player-card">
-        <img src="" alt="監督写真" class="player-photo">
-
-        <div class="player-content">
-          <div class="number">#16</div>
-
-          <div class="player-name">
-            井堂 輝明
+        <article class="player-card">
+          <div class="player-photo photo-placeholder" role="img" aria-label="井堂 輝明の写真">
+            <span>PHOTO</span>
           </div>
-
-          <div class="player-info">
-            監督
-          </div>
-
-<div class="player-info">
-  出身校：盾津高校
-</div>
-
-<div class="player-info">
-  生年月日：1986年7月31日
-</div>
-
-          <div class="message">
+          <div class="player-content">
+            <div class="number">#16</div>
             
+            <h3 class="player-name">井堂 輝明</h3>
+            <p class="player-kana">イドウ テルアキ</p>
+            <div class="player-info">役割・ポジション：部長・監督</div>
+            <div class="player-info">出身校：盾津高校</div>
+            <div class="player-info">生年月日：1986年7月31日</div>
+            <div class="player-info">身長・体重：165cm／75kg</div>
+            <div class="player-info">投打：右投右打</div>
           </div>
-        </div>
-      </div>
+        </article>
 
-      <!-- マネージャー -->
-      <div class="player-card">
-        <img src="" alt="マネージャー写真" class="player-photo">
 
-        <div class="player-content">
-          <div class="number">#89</div>
-
-          <div class="player-name">
-            鈴木 茂恵佳
+        <article class="player-card">
+          <div class="player-photo photo-placeholder" role="img" aria-label="等々力 賢輔の写真">
+            <span>PHOTO</span>
           </div>
-
-          <div class="player-info">
-            マネージャー
-          </div>
-          <div class="player-info">
-  出身校：天竜高校-履正社医療スポーツ専門学校
-</div>
-
-<div class="player-info">
-  生年月日：1999年6月10日
-</div>
-
-          <div class="message">
+          <div class="player-content">
+            <div class="number">#18</div>
             
+            <h3 class="player-name">等々力 賢輔</h3>
+            <p class="player-kana">トドリキ ケンスケ</p>
+            <div class="player-info">役割・ポジション：コーチ</div>
+            <div class="player-info">出身校：西城陽高校－京都橘大学</div>
+            <div class="player-info">生年月日：1995年2月11日</div>
+            <div class="player-info">身長・体重：177cm／72kg</div>
+            <div class="player-info">投打：右投右打</div>
           </div>
-        </div>
-      </div>
+        </article>
+
+
+        <article class="player-card">
+          <div class="player-photo photo-placeholder" role="img" aria-label="鈴木 茂恵佳の写真">
+            <span>PHOTO</span>
+          </div>
+          <div class="player-content">
+            <div class="number">#89</div>
+            
+            <h3 class="player-name">鈴木 茂恵佳</h3>
+            <p class="player-kana">スズキ モエカ</p>
+            <div class="player-info">役割・ポジション：マネージャー</div>
+            <div class="player-info">出身校：天竜高校－履正社スポーツ専門学校</div>
+            <div class="player-info">生年月日：1999年6月10日</div>
+            <div class="player-info">身長・体重：160cm／50kg</div>
+            <div class="player-info">投打：右投右打</div>
+          </div>
+        </article>
+
+
+        <article class="player-card">
+          <div class="player-photo photo-placeholder" role="img" aria-label="高岡 拓真の写真">
+            <span>PHOTO</span>
+          </div>
+          <div class="player-content">
+            <div class="number">#0</div>
+            
+            <h3 class="player-name">高岡 拓真</h3>
+            <p class="player-kana">タカオカ タクマ</p>
+            <div class="player-info">役割・ポジション：トレーナー</div>
+            <div class="player-info">出身校：綾部高校</div>
+            <div class="player-info">生年月日：1994年6月7日</div>
+            <div class="player-info">身長・体重：165cm／75kg</div>
+            <div class="player-info">投打：右投右打</div>
+          </div>
+        </article>
 
     </div>
   </section>
 
-  <section>
-    <div class="section-title">
-      <p class="section-en">ROSTER</p>
-      <h2>選手紹介</h2>
-    </div>
 
-    <div class="players-grid">
-      <div class="player-card">
-        <img src="" alt="選手写真" class="player-photo">
-
-        <div class="player-content">
-          <div class="number">#0</div>
-
-          <div class="player-name">
-            ⾼岡 拓真
-          </div>
-
-          <div class="player-info">
-            ポジション：内野手、外野手
-          </div>
-
-          <div class="player-info">
-            出身：綾部高校
-          </div>
-
-          <div class="player-info">
-  生年月日：1994年6月7日
-</div>
-
-          <div class="player-info">
-            投打：右投右打
-          </div>
-
-          <div class="message">
-            
-          </div>
-        </div>
+    <section class="roster-group">
+      <div class="position-heading">
+        <p class="section-en">投手</p>
+        <h2>投手</h2>
       </div>
+      <div class="players-grid">
 
-      <!-- 選手 -->
-      <div class="player-card">
-        <img src="" alt="選手写真" class="player-photo">
-
-        <div class="player-content">
-          <div class="number">#1</div>
-
-          <div class="player-name">
-            木津 弘人
+        <article class="player-card">
+          <div class="player-photo photo-placeholder" role="img" aria-label="大川 直輝の写真">
+            <span>PHOTO</span>
           </div>
-
-          <div class="player-info">
-            ポジション：内野手、外野手
-          </div>
-
-          <div class="player-info">
-            出身：上宮高校-履正社スポーツ専門学校
-          </div>
-
-          <div class="player-info">
-  生年月日：2001年11月12日
-</div>
-
-          <div class="player-info">
-            投打：右投左打
-          </div>
-
-          <div class="message">
+          <div class="player-content">
+            <div class="number">#11</div>
             
+            <h3 class="player-name">大川 直輝</h3>
+            <p class="player-kana">オオカワ ナオキ</p>
+            <div class="player-info">役割・ポジション：投手</div>
+            <div class="player-info">出身校：六甲アイランド高校</div>
+            <div class="player-info">生年月日：2003年4月28日</div>
+            <div class="player-info">身長・体重：177cm／70kg</div>
+            <div class="player-info">投打：左投左打</div>
           </div>
-        </div>
-      </div>
+        </article>
 
-      <!-- 選手 -->
-      <div class="player-card">
-        <img src="" alt="選手写真" class="player-photo">
 
-        <div class="player-content">
-          <div class="number">#5</div>
-
-          <div class="player-name">
-           眞部 優
+        <article class="player-card">
+          <div class="player-photo photo-placeholder" role="img" aria-label="井堂 輝明の写真">
+            <span>PHOTO</span>
           </div>
-
-          <div class="player-info">
-            ポジション：内野手、捕手
-          </div>
-
-          <div class="player-info">
-            出身：成城工業高校
-          </div>
-
-          <div class="player-info">
-  生年月日：1985年5月12日
-</div>
-
-          <div class="player-info">
-            投打：右投右打
-          </div>
-
-          <div class="message">
+          <div class="player-content">
+            <div class="number">#16</div>
             
+            <h3 class="player-name">井堂 輝明</h3>
+            <p class="player-kana">イドウ テルアキ</p>
+            <div class="player-info">役割・ポジション：投手</div>
+            <div class="player-info">出身校：盾津高校</div>
+            <div class="player-info">生年月日：1986年7月31日</div>
+            <div class="player-info">身長・体重：165cm／75kg</div>
+            <div class="player-info">投打：右投右打</div>
           </div>
-        </div>
-      </div>
+        </article>
 
-      <!-- 選手 -->
-      <div class="player-card">
-        <img src="" alt="選手写真" class="player-photo">
 
-        <div class="player-content">
-          <div class="number">#7</div>
-
-          <div class="player-name">
-            山本 真之
+        <article class="player-card">
+          <div class="player-photo photo-placeholder" role="img" aria-label="堀川 純の写真">
+            <span>PHOTO</span>
           </div>
-
-          <div class="player-info">
-            ポジション：内野手
-          </div>
-
-          <div class="player-info">
-            出身：大阪電気通信大学高校-京都先端科学大学
-          </div>
-
-          <div class="player-info">
-  生年月日：1998年10月19日
-</div>
-
-          <div class="player-info">
-            投打：右投右打
-          </div>
-
-          <div class="message">
+          <div class="player-content">
+            <div class="number">#17</div>
             
+            <h3 class="player-name">堀川 純</h3>
+            <p class="player-kana">ホリカワ ジュン</p>
+            <div class="player-info">役割・ポジション：投手</div>
+            <div class="player-info">出身校：箕面学園高校－大阪学院大学</div>
+            <div class="player-info">生年月日：1995年6月16日</div>
+            <div class="player-info">身長・体重：180cm／67kg</div>
+            <div class="player-info">投打：右投右打</div>
           </div>
-        </div>
+        </article>
+
+
+        <article class="player-card">
+          <div class="player-photo photo-placeholder" role="img" aria-label="等々力 賢輔の写真">
+            <span>PHOTO</span>
+          </div>
+          <div class="player-content">
+            <div class="number">#18</div>
+            
+            <h3 class="player-name">等々力 賢輔</h3>
+            <p class="player-kana">トドリキ ケンスケ</p>
+            <div class="player-info">役割・ポジション：投手</div>
+            <div class="player-info">出身校：西城陽高校－京都橘大学</div>
+            <div class="player-info">生年月日：1995年2月11日</div>
+            <div class="player-info">身長・体重：177cm／72kg</div>
+            <div class="player-info">投打：右投右打</div>
+          </div>
+        </article>
+
+
+        <article class="player-card">
+          <div class="player-photo photo-placeholder" role="img" aria-label="亀田 樹吹の写真">
+            <span>PHOTO</span>
+          </div>
+          <div class="player-content">
+            <div class="number">#19</div>
+            
+            <h3 class="player-name">亀田 樹吹</h3>
+            <p class="player-kana">カメダ イブキ</p>
+            <div class="player-info">役割・ポジション：投手</div>
+            <div class="player-info">出身校：柳井学園高校</div>
+            <div class="player-info">生年月日：2005年12月15日</div>
+            <div class="player-info">身長・体重：180cm／68kg</div>
+            <div class="player-info">投打：右投右打</div>
+          </div>
+        </article>
+
+
+        <article class="player-card">
+          <div class="player-photo photo-placeholder" role="img" aria-label="土居 勇太の写真">
+            <span>PHOTO</span>
+          </div>
+          <div class="player-content">
+            <div class="number">#26</div>
+            
+            <h3 class="player-name">土居 勇太</h3>
+            <p class="player-kana">ドイ ユウタ</p>
+            <div class="player-info">役割・ポジション：投手</div>
+            <div class="player-info">出身校：浪速高校－大阪学院大学</div>
+            <div class="player-info">生年月日：1999年10月8日</div>
+            <div class="player-info">身長・体重：172cm／67kg</div>
+            <div class="player-info">投打：右投右打</div>
+          </div>
+        </article>
+
+
+        <article class="player-card">
+          <div class="player-photo photo-placeholder" role="img" aria-label="小林 真の写真">
+            <span>PHOTO</span>
+          </div>
+          <div class="player-content">
+            <div class="number">#78</div>
+            
+            <h3 class="player-name">小林 真</h3>
+            <p class="player-kana">コバヤシ マコト</p>
+            <div class="player-info">役割・ポジション：投手</div>
+            <div class="player-info">出身校：浜松市立高校</div>
+            <div class="player-info">生年月日：2003年6月14日</div>
+            <div class="player-info">身長・体重：171cm／60kg</div>
+            <div class="player-info">投打：右投右打</div>
+          </div>
+        </article>
+
       </div>
-      <div class="player-card">
-  <img src="選手写真.jpg" alt="選手写真" class="player-photo">
+    </section>
 
-  <div class="player-content">
-    <div class="number">#8</div>
 
-    <div class="player-name">
-      ⼭崎 裕太
-    </div>
+    <section class="roster-group">
+      <div class="position-heading">
+        <p class="section-en">捕手</p>
+        <h2>捕手</h2>
+      </div>
+      <div class="players-grid">
 
-    <div class="player-info">
-      ポジション：内野手
-    </div>
+        <article class="player-card">
+          <div class="player-photo photo-placeholder" role="img" aria-label="中嶋 一生の写真">
+            <span>PHOTO</span>
+          </div>
+          <div class="player-content">
+            <div class="number">#27</div>
+            
+            <h3 class="player-name">中嶋 一生</h3>
+            <p class="player-kana">ナカシマ カズキ</p>
+            <div class="player-info">役割・ポジション：捕手</div>
+            <div class="player-info">出身校：工業高校</div>
+            <div class="player-info">生年月日：1995年7月29日</div>
+            <div class="player-info">身長・体重：178cm／75kg</div>
+            <div class="player-info">投打：右投両打</div>
+          </div>
+        </article>
 
-    <div class="player-info">
-      出身：報徳学園高校
-    </div>
 
-    <div class="player-info">
-  生年月日：1994年10月31日
-</div>
+        <article class="player-card">
+          <div class="player-photo photo-placeholder" role="img" aria-label="今西 皓紀の写真">
+            <span>PHOTO</span>
+          </div>
+          <div class="player-content">
+            <div class="number">#32</div>
+            
+            <h3 class="player-name">今西 皓紀</h3>
+            <p class="player-kana">イマニシ コウキ</p>
+            <div class="player-info">役割・ポジション：捕手</div>
+            <div class="player-info">出身校：常翔学園高校－摂南大学</div>
+            <div class="player-info">生年月日：2001年11月10日</div>
+            <div class="player-info">身長・体重：168cm／65kg</div>
+            <div class="player-info">投打：右投左打</div>
+          </div>
+        </article>
 
-    <div class="player-info">
-      投打：右投右打
-    </div>
+      </div>
+    </section>
 
-    <div class="message">
-      
-    </div>
+
+    <section class="roster-group">
+      <div class="position-heading">
+        <p class="section-en">内野手</p>
+        <h2>内野手</h2>
+      </div>
+      <div class="players-grid">
+
+        <article class="player-card">
+          <div class="player-photo photo-placeholder" role="img" aria-label="木津 弘人の写真">
+            <span>PHOTO</span>
+          </div>
+          <div class="player-content">
+            <div class="number">#1</div>
+            
+            <h3 class="player-name">木津 弘人</h3>
+            <p class="player-kana">キヅ ヒロト</p>
+            <div class="player-info">役割・ポジション：内野手</div>
+            <div class="player-info">出身校：上宮高校－履正社スポーツ専門学校</div>
+            <div class="player-info">生年月日：2001年11月12日</div>
+            <div class="player-info">身長・体重：171cm／70kg</div>
+            <div class="player-info">投打：右投左打</div>
+          </div>
+        </article>
+
+
+        <article class="player-card">
+          <div class="player-photo photo-placeholder" role="img" aria-label="眞部 優の写真">
+            <span>PHOTO</span>
+          </div>
+          <div class="player-content">
+            <div class="number">#5</div>
+            
+            <h3 class="player-name">眞部 優</h3>
+            <p class="player-kana">マナベ マサル</p>
+            <div class="player-info">役割・ポジション：内野手</div>
+            <div class="player-info">出身校：成城工業高校</div>
+            <div class="player-info">生年月日：1985年5月12日</div>
+            <div class="player-info">身長・体重：175cm／85kg</div>
+            <div class="player-info">投打：右投右打</div>
+          </div>
+        </article>
+
+
+        <article class="player-card">
+          <div class="player-photo photo-placeholder" role="img" aria-label="山本 真之の写真">
+            <span>PHOTO</span>
+          </div>
+          <div class="player-content">
+            <div class="number">#7</div>
+            
+            <h3 class="player-name">山本 真之</h3>
+            <p class="player-kana">ヤマモト サネユキ</p>
+            <div class="player-info">役割・ポジション：内野手</div>
+            <div class="player-info">出身校：大阪電気通信大学高校－京都先端科学大学</div>
+            <div class="player-info">生年月日：1998年10月19日</div>
+            <div class="player-info">身長・体重：170cm／97kg</div>
+            <div class="player-info">投打：右投右打</div>
+          </div>
+        </article>
+
+
+        <article class="player-card">
+          <div class="player-photo photo-placeholder" role="img" aria-label="山崎 裕太の写真">
+            <span>PHOTO</span>
+          </div>
+          <div class="player-content">
+            <div class="number">#8</div>
+            
+            <h3 class="player-name">山崎 裕太</h3>
+            <p class="player-kana">ヤマサキ ユウタ</p>
+            <div class="player-info">役割・ポジション：内野手</div>
+            <div class="player-info">出身校：報徳学園高校</div>
+            <div class="player-info">生年月日：1994年10月31日</div>
+            <div class="player-info">身長・体重：167cm／85kg</div>
+            <div class="player-info">投打：右投右打</div>
+          </div>
+        </article>
+
+
+        <article class="player-card">
+          <div class="player-photo photo-placeholder" role="img" aria-label="渡辺 剛の写真">
+            <span>PHOTO</span>
+          </div>
+          <div class="player-content">
+            <div class="number">#13</div>
+            <span class="player-badge">主将</span>
+            <h3 class="player-name">渡辺 剛</h3>
+            <p class="player-kana">ワタナベ ツヨシ</p>
+            <div class="player-info">役割・ポジション：内野手</div>
+            <div class="player-info">出身校：工業高校</div>
+            <div class="player-info">生年月日：1994年6月13日</div>
+            <div class="player-info">身長・体重：170cm／72kg</div>
+            <div class="player-info">投打：右投右打</div>
+          </div>
+        </article>
+
+
+        <article class="player-card">
+          <div class="player-photo photo-placeholder" role="img" aria-label="豊嶋 駿介の写真">
+            <span>PHOTO</span>
+          </div>
+          <div class="player-content">
+            <div class="number">#29</div>
+            
+            <h3 class="player-name">豊嶋 駿介</h3>
+            <p class="player-kana">トヨシマ シュンスケ</p>
+            <div class="player-info">役割・ポジション：内野手</div>
+            <div class="player-info">出身校：千種高校－同志社大学</div>
+            <div class="player-info">生年月日：2002年4月18日</div>
+            <div class="player-info">身長・体重：176cm／75kg</div>
+            <div class="player-info">投打：右投両打</div>
+          </div>
+        </article>
+
+
+        <article class="player-card">
+          <div class="player-photo photo-placeholder" role="img" aria-label="佐藤 将悟の写真">
+            <span>PHOTO</span>
+          </div>
+          <div class="player-content">
+            <div class="number">#38</div>
+            
+            <h3 class="player-name">佐藤 将悟</h3>
+            <p class="player-kana">サトウ ショウゴ</p>
+            <div class="player-info">役割・ポジション：内野手</div>
+            <div class="player-info">出身校：山本高校－大阪電気通信大学</div>
+            <div class="player-info">生年月日：1996年1月20日</div>
+            <div class="player-info">身長・体重：170cm／82kg</div>
+            <div class="player-info">投打：右投右打</div>
+          </div>
+        </article>
+
+
+        <article class="player-card">
+          <div class="player-photo photo-placeholder" role="img" aria-label="木村 誠の写真">
+            <span>PHOTO</span>
+          </div>
+          <div class="player-content">
+            <div class="number">#41</div>
+            
+            <h3 class="player-name">木村 誠</h3>
+            <p class="player-kana">キムラ マコト</p>
+            <div class="player-info">役割・ポジション：内野手</div>
+            <div class="player-info">出身校：奈良北高校－大阪経済大学</div>
+            <div class="player-info">生年月日：1989年6月24日</div>
+            <div class="player-info">身長・体重：163cm／63kg</div>
+            <div class="player-info">投打：右投左打</div>
+          </div>
+        </article>
+
+
+        <article class="player-card">
+          <div class="player-photo photo-placeholder" role="img" aria-label="上川 将吾の写真">
+            <span>PHOTO</span>
+          </div>
+          <div class="player-content">
+            <div class="number">#99</div>
+            
+            <h3 class="player-name">上川 将吾</h3>
+            <p class="player-kana">カミカワ ショウゴ</p>
+            <div class="player-info">役割・ポジション：内野手</div>
+            <div class="player-info">出身校：綾部高校</div>
+            <div class="player-info">生年月日：1994年10月5日</div>
+            <div class="player-info">身長・体重：180cm／105kg</div>
+            <div class="player-info">投打：右投右打</div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+
+    <section class="roster-group">
+      <div class="position-heading">
+        <p class="section-en">外野手</p>
+        <h2>外野手</h2>
+      </div>
+      <div class="players-grid">
+
+        <article class="player-card">
+          <div class="player-photo photo-placeholder" role="img" aria-label="高岡 拓真の写真">
+            <span>PHOTO</span>
+          </div>
+          <div class="player-content">
+            <div class="number">#0</div>
+            
+            <h3 class="player-name">高岡 拓真</h3>
+            <p class="player-kana">タカオカ タクマ</p>
+            <div class="player-info">役割・ポジション：外野手</div>
+            <div class="player-info">出身校：綾部高校</div>
+            <div class="player-info">生年月日：1994年6月7日</div>
+            <div class="player-info">身長・体重：165cm／75kg</div>
+            <div class="player-info">投打：右投右打</div>
+          </div>
+        </article>
+
+
+        <article class="player-card">
+          <div class="player-photo photo-placeholder" role="img" aria-label="南 雅斗の写真">
+            <span>PHOTO</span>
+          </div>
+          <div class="player-content">
+            <div class="number">#3</div>
+            
+            <h3 class="player-name">南 雅斗</h3>
+            <p class="player-kana">ミナミ マサト</p>
+            <div class="player-info">役割・ポジション：外野手</div>
+            <div class="player-info">出身校：大阪夕陽丘学園高校－桃山学院教育大学</div>
+            <div class="player-info">生年月日：1997年11月6日</div>
+            <div class="player-info">身長・体重：181cm／66kg</div>
+            <div class="player-info">投打：右投左打</div>
+          </div>
+        </article>
+
+
+        <article class="player-card">
+          <div class="player-photo photo-placeholder" role="img" aria-label="坂根 和真の写真">
+            <span>PHOTO</span>
+          </div>
+          <div class="player-content">
+            <div class="number">#24</div>
+            
+            <h3 class="player-name">坂根 和真</h3>
+            <p class="player-kana">サカネ カズマ</p>
+            <div class="player-info">役割・ポジション：外野手</div>
+            <div class="player-info">出身校：牧野高校－近畿大学</div>
+            <div class="player-info">生年月日：1997年9月27日</div>
+            <div class="player-info">身長・体重：177cm／67kg</div>
+            <div class="player-info">投打：右投右打</div>
+          </div>
+        </article>
+
+
+        <article class="player-card">
+          <div class="player-photo photo-placeholder" role="img" aria-label="西野 太貴の写真">
+            <span>PHOTO</span>
+          </div>
+          <div class="player-content">
+            <div class="number">#51</div>
+            
+            <h3 class="player-name">西野 太貴</h3>
+            <p class="player-kana">ニシノ タイキ</p>
+            <div class="player-info">役割・ポジション：外野手</div>
+            <div class="player-info">出身校：西舞鶴高校－金沢工業大学</div>
+            <div class="player-info">生年月日：1998年10月3日</div>
+            <div class="player-info">身長・体重：184cm／67kg</div>
+            <div class="player-info">投打：右投右打</div>
+          </div>
+        </article>
+
+
+        <article class="player-card">
+          <div class="player-photo photo-placeholder" role="img" aria-label="鈴木 茂恵佳の写真">
+            <span>PHOTO</span>
+          </div>
+          <div class="player-content">
+            <div class="number">#89</div>
+            
+            <h3 class="player-name">鈴木 茂恵佳</h3>
+            <p class="player-kana">スズキ モエカ</p>
+            <div class="player-info">役割・ポジション：外野手</div>
+            <div class="player-info">出身校：天竜高校－履正社スポーツ専門学校</div>
+            <div class="player-info">生年月日：1999年6月10日</div>
+            <div class="player-info">身長・体重：160cm／50kg</div>
+            <div class="player-info">投打：右投右打</div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+
+  <div class="button-area">
+    <a href="index.html" class="button">トップページへ戻る</a>
+    <a href="recruit.html" class="button">選手募集を見る</a>
   </div>
-</div>
-
-      <div class="player-card">
-  <img src="選手写真.jpg" alt="選手写真" class="player-photo">
-
-  <div class="player-content">
-    <div class="number">#11</div>
-
-    <div class="player-name">
-      ⼤川 直輝
-    </div>
-
-    <div class="player-info">
-      ポジション：内野手・外野手
-    </div>
-
-    <div class="player-info">
-      出身：六甲アイランド高校-龍谷大学
-    </div>
-
-    <div class="player-info">
-      投打：右投右打
-    </div>
-
-    <div class="player-info">
-  生年月日：2003年4月28日
-</div>
-
-    <div class="message">
-      
-    </div>
-  </div>
-</div>
-
-      <div class="player-card">
-  <img src="選手写真.jpg" alt="選手写真" class="player-photo">
-
-  <div class="player-content">
-    <div class="number">#13</div>
-
-    <div class="player-name">
-      渡辺 剛
-    </div>
-
-    <div class="player-info">
-      ポジション：内野手・投手
-    </div>
-
-    <div class="player-info">
-      出身：京都府立工業高
-    </div>
-
-    <div class="player-info">
-      投打：右投右打
-    </div>
-
-    <div class="message">
-      
-    </div>
-  </div>
-</div>
-
-      <div class="player-card">
-  <img src="選手写真.jpg" alt="選手写真" class="player-photo">
-
-  <div class="player-content">
-    <div class="number">#17</div>
-
-    <div class="player-name">
-      堀川 純
-    </div>
-
-    <div class="player-info">
-      ポジション：投手・外野手
-    </div>
-
-    <div class="player-info">
-      出身：⼤阪学院⼤
-    </div>
-
-    <div class="player-info">
-      投打：右投右打
-    </div>
-
-    <div class="message">
-      
-    </div>
-  </div>
-</div>
-
-      
-    </div>
-
-    <div class="button-area">
-      <a href="index.html" class="button">トップページへ戻る</a>
-      <a href="recruit.html" class="button">選手募集を見る</a>
-    </div>
-
-  </section>
-
 </main>
 
-<a href="#" class="top-button">↑</a>
+<a href="#" class="top-button" aria-label="ページ上部へ戻る">↑</a>
 
 <footer>
   <div class="footer-inner">
@@ -419,14 +650,8 @@
       <a href="recruit.html">選手募集</a>
     </div>
   </div>
-
   <p class="copyright">© 2026 B-BACKS</p>
 </footer>
-  
-<script>
-document.querySelector(".menu-toggle").addEventListener("click", function() {
-  document.querySelector(".menu").classList.toggle("active");
-});
-</script>
+
 </body>
 </html>
